@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    container_name: null_game_app
+    # Эти строки критически важны для input() 👇
+    stdin_open: true # Аналог флага -i (интерактивность)
+    tty: true        # Аналог флага -t (эмуляция терминала)
